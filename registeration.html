@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        * {
+            align-items: center;
+
+        }
+
+        .table {
+            margin-left: auto;
+            margin-right: auto;
+            font-family: sans-serif;
+            font-size: large;
+            border: solid;
+            padding: 2rem;
+            background-color: rgb(181, 180, 180);
+
+
+        }
+
+       
+        button {
+
+            padding: 10px;
+            text-align: center;
+            width: 150;
+        }
+
+        button:hover {
+            background-color: black;
+            color: white;
+
+        }
+
+        input[type="text"] {
+            width: 80%;
+            height: 20px;
+
+
+        }
+    </style>
+</head>
+
+
+<body>
+    <table class="table">
+        <th>Registeration Form</th>
+
+
+
+        <tr>
+            <td> <label for="name"> Name <span style="color:red;">&#42;</span> :</label></td>
+            <td> <input type="text" placeholder="First" pattern="[A-Za-z+]">
+                <input type="text" placeholder="Last" pattern="[A-Za-z]"></td>
+
+        </tr>
+
+        <tr>
+            <td>
+                <label for="email"> Email<span style="color:red;">&#42;</span></label>
+            </td>
+            <td>
+
+                <input type="text" placeholder="Enter Email" pattern="^[A-Za-z@+]">
+            </td>
+
+        </tr>
+        <tr>
+            <td>
+                <label for="address"> Address</label>
+            </td>
+            <td>
+                <textarea name="" id="" cols="30" rows="7"></textarea>
+            </td>
+        </tr>
+        <tr>
+            <td>Department:</td>
+            <td>
+                <select name="" id="">
+                    <option value="it">IT</option>
+                    <option value="finance">Finance </option>
+                    <option value="Production">Production</option>
+
+                </select>
+            </td>
+        </tr>
+
+        <tr>
+            <td><label for="username">UserName<span style="color:red;">&#42;</span>:</label></td>
+            <td><input type="text" placeholder="Enter UserName" required></td>
+        </tr>
+
+
+
+        <tr>
+            <td><label for="">Contact No.</label></td>
+            <td><input type="text "></td>
+        </tr>
+
+        <tr>
+            <td><Label>Password</Label></td>
+            <td><input type="text" pattern="[a-zA-Z@-_0-9]"></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>
+
+                <button type="submit">submit</button>
+
+            </td>
+        </tr>
+    </table>
+</body>
+
+</html>
